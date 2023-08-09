@@ -1,0 +1,51 @@
+retry1: &retry1
+  name: retry1
+  max_attempts: 4
+  backoff: # backoff is randomized in [0, delay]
+    exponential:
+      initial: 10ms
+      maximum: 1s
+      multiplier: 2
+  retryable_error_codes: [ 141 ]
+
+retry2: &retry2
+  name: retry2
+  max_attempts: 4
+  backoff: # backoff is randomized in [0, delay]
+    linear: [100ms, 500ms]
+  retryable_error_codes: [ 141 ]
+  skip_visited_nodes: false
+
+hedging1: &hedging1
+  name: hedging1
+  max_attempts: 4
+  hedging_delay: 0.5s
+  non_fatal_error_codes: [ 141 ]
+
+hedging2: &hedging2
+  name: hedging2
+  max_attempts: 4
+  hedging_delay: 1s
+  non_fatal_error_codes: [ 141 ]
+  skip_visited_nodes: true
+
+service:
+  - name: trpc.app.server.Welcome
+    retry_hedging_throttle:
+      max_tokens: 10
+      token_ratio: 0.1
+    retry_hedging:
+      retry: *retry1
+    methods:
+      - callee: Hello
+        retry_hedging:
+          retry: *retry2
+      - callee: Hi
+        retry_hedging:
+          hedging: *hedging1
+      - callee: Greet # no policy will be applied to this method, do not forget {}
+        retry_hedging: {}
+      - callee: Yo # explicitly inherit retry1 from parent service
+  - name: trpc.app.server.Greeting
+    retry_hedging:
+      hedging: *hedging2

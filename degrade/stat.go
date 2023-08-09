@@ -1,0 +1,68 @@
+// Tencent is pleased to support the open source community by making tRPC available.
+// Copyright (C) 2023 THL A29 Limited, a Tencent company. All rights reserved.
+// If you have downloaded a copy of the tRPC source code from Tencent,
+// please note that tRPC source code is licensed under the Apache 2.0 License,
+// A copy of the Apache 2.0 License is included in this file.
+
+package degrade
+
+import (
+	"time"
+
+	"git.code.oa.com/inews_go/tools/cgroup"
+	"github.com/shirou/gopsutil/load"
+)
+
+var (
+	// UpdateSysPeriod 更新系统数据同步状态的时间周期
+	UpdateSysPeriod = 30
+	// WaitCPUTime cpu 使用率的平均值区间周期，单位 Second
+	WaitCPUTime = 90
+	cpuIdle     = 100
+)
+
+// UpdateSysInfoPerTime 更新系统数据给全局变量
+func UpdateSysInfoPerTime() {
+	for range time.Tick(time.Duration(UpdateSysPeriod) * time.Second) {
+		// get cpuinfo perorid 90s
+		cpuUsage, cerr := cgroup.GetDockerCpuUsage(time.Second * time.Duration(WaitCPUTime))
+		if cerr == nil {
+			// use more 1 to calculute cpu idle to integer
+			cpuIdle = 100 - int(cpuUsage*100)
+		}
+		if cpuIdle < 0 {
+			cpuIdle = 0
+		}
+	}
+}
+
+// GetCpuIdle 获取 cpu 使用率
+// Deprecated: Use GetCPUIdle instead.
+var GetCpuIdle = GetCPUIdle //nolint:revive
+
+// GetCPUIdle 获取 cpu 使用率
+func GetCPUIdle() int {
+	return cpuIdle
+}
+
+var loadavgProvider = load.Avg
+
+// GetLoadAvg 获取load负载，包含load1，load5，load15
+func GetLoadAvg() (*load.AvgStat, error) {
+	loadavg, err := loadavgProvider()
+	if err != nil {
+		return &load.AvgStat{}, err
+	}
+	return loadavg, nil
+}
+
+var memoryUsageInfosProvider = cgroup.GetDockerMemoryUsageInfos
+
+// GetMemoryStat 获取内存状态
+func GetMemoryStat() float64 {
+	usage, _, _, err := memoryUsageInfosProvider()
+	if err != nil {
+		return 0.0
+	}
+	return usage * 100
+}

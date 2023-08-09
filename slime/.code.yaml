@@ -1,0 +1,6 @@
+source:
+  test_source:
+    filepath_regex: [".*_test.go$", ".*special_codec_test.*"]
+  auto_generate_source:
+    filepath_regex: [".*.pb.go$", ".*.trpc.go$", ".*_mock.go$"]
+
