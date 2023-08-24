@@ -97,11 +97,11 @@ func TestFilter_Filter(t *testing.T) {
 		B: "123",
 	}
 
-	ex := newTestRule("/trpc.app.server.service/methodA", errs.RetClientCanceled)
-	in := newTestRule("/trpc.app.server.service/methodA", errs.RetServerSystemErr)
+	ex := newTestRule("/trpc.app.server.service/methodA", int(errs.RetClientCanceled))
+	in := newTestRule("/trpc.app.server.service/methodA", int(errs.RetServerSystemErr))
 	sf := ServerFilter(
 		WithExclude(ex), WithInclude(in),
-		WithInclude(newTestRule("/trpc.app.server.service/methodA", errs.RetOK)))
+		WithInclude(newTestRule("/trpc.app.server.service/methodA", int(errs.RetOK))))
 
 	_, err := sf(ctx, req, testHandleFunc1)
 	assert.NotNil(t, sf)

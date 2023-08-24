@@ -176,7 +176,7 @@ func ServerFilter(opts ...Option) filter.ServerFilter {
 		begin := time.Now()
 		rsp, err = handler(ctx, req)
 		msg := trpc.Message(ctx)
-		if !o.passed(msg.ServerRPCName(), errs.Code(err)) {
+		if !o.passed(msg.ServerRPCName(), int(errs.Code(err))) {
 			return rsp, err
 		}
 
@@ -216,7 +216,7 @@ func ClientFilter(opts ...Option) filter.ClientFilter {
 		msg := trpc.Message(ctx)
 		begin := time.Now()
 		err = handler(ctx, req, rsp)
-		if !o.passed(msg.ClientRPCName(), errs.Code(err)) {
+		if !o.passed(msg.ClientRPCName(), int(errs.Code(err))) {
 			return err
 		}
 
