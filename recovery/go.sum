@@ -106,9 +106,7 @@ gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
 gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
-trpc.group/trpc-go/go_reuseport v1.7.1-0.20230423021710-f5eeff5d87a3 h1:FN4gLJ2xxueQ/LYPxfrAwq6hmdHJaAftFZm8qvqI63o=
-trpc.group/trpc-go/tnet v0.0.12-0.20230423031524-5eb1cc42f225 h1:sExJeNiDhhQ7dP6P0afYZ+HU1MnnMYhlnDApSmCLu9U=
-trpc.group/trpc-go/tnet v0.0.12-0.20230423031524-5eb1cc42f225/go.mod h1:YUGAw+mutXH1ILO6UzoZYeT7G/9l5xmEDXmp/CvaP/E=
+trpc.group/trpc-go/tnet v0.0.0-20230810071536-9d05338021cf h1:Qo0p6ZJV60Qd5XajiIDidVgx1NDM9UHL7DzDKc2gqns=
 trpc.group/trpc-go/trpc-go v0.0.0-20230824091938-4699a10e2f35 h1:i1FDS2HHvcfJg1nxeNpjER7CYHctzkYN/x7RjwqU0CA=
 trpc.group/trpc-go/trpc-go v0.0.0-20230824091938-4699a10e2f35/go.mod h1:ve2YyZleGVbnKr0RLUJcu35dXw2zZmsi3RdKVPgL4+4=
 trpc.group/trpc/trpc-protocol/pb/go/trpc v0.0.0-20230803031059-de4168eb5952 h1:AhjP72IKa1YKnSIayk1X5xSzKrem0EanjZ7oMc2HYOw=
