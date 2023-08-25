@@ -35,7 +35,6 @@ require (
 	golang.org/x/sync v0.3.0 // indirect
 	golang.org/x/sys v0.11.0 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
-	trpc.group/trpc-go/go_reuseport v1.7.1-0.20230423021710-f5eeff5d87a3 // indirect
-	trpc.group/trpc-go/tnet v0.0.12-0.20230423031524-5eb1cc42f225 // indirect
+	trpc.group/trpc-go/tnet v0.0.0-20230810071536-9d05338021cf // indirect
 	trpc.group/trpc/trpc-protocol/pb/go/trpc v0.0.0-20230803031059-de4168eb5952 // indirect
 )
