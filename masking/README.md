@@ -9,7 +9,7 @@ tRPC敏感数据脱敏模块
 
 ````
 import (
-   _ "git.code.oa.com/trpc-go/trpc-filter/masking"
+   _ "trpc.group/trpc-go/trpc-filter/masking"
 )
 ````
 
@@ -46,7 +46,7 @@ package trpc.test.helloworld;
 
 import "masking.proto";
 
-option go_package="git.code.oa.com/trpcprotocol/test/helloworld";
+option go_package="trpc.group/trpcprotocol/test/helloworld";
 
 ... // 省略部分proto消息结构
 

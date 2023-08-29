@@ -10,7 +10,7 @@ package masking
 import (
 	"context"
 
-	"git.code.oa.com/trpc-go/trpc-go/filter"
+	"trpc.group/trpc-go/trpc-go/filter"
 )
 
 func init() {

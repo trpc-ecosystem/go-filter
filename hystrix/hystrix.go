@@ -12,12 +12,12 @@ import (
 	"fmt"
 	"runtime"
 
-	"git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/filter"
-	"git.code.oa.com/trpc-go/trpc-go/log"
-	"git.code.oa.com/trpc-go/trpc-go/plugin"
 	"github.com/afex/hystrix-go/hystrix"
 	metriccollector "github.com/afex/hystrix-go/hystrix/metric_collector"
+	"trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/filter"
+	"trpc.group/trpc-go/trpc-go/log"
+	"trpc.group/trpc-go/trpc-go/plugin"
 )
 
 const (

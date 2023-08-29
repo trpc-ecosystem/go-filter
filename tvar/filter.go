@@ -11,10 +11,10 @@ import (
 	"context"
 	"time"
 
-	"git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/errs"
-	"git.code.oa.com/trpc-go/trpc-go/filter"
 	"go.opentelemetry.io/otel/attribute"
+	"trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/errs"
+	"trpc.group/trpc-go/trpc-go/filter"
 )
 
 const filterName = "tvar"

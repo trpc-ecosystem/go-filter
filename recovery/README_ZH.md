@@ -10,7 +10,7 @@
 
 ```golang
 import (
-   _ "git.code.oa.com/trpc-go/trpc-filter/recovery"
+   _ "trpc.group/trpc-go/trpc-filter/recovery"
 )
 ```
 

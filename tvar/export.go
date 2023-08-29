@@ -16,11 +16,11 @@ import (
 	"strings"
 	"time"
 
-	"git.code.oa.com/trpc-go/trpc-go/admin"
-	"git.code.oa.com/trpc-go/trpc-go/log"
 	"go.opentelemetry.io/otel/sdk/metric/export/aggregation"
+	"trpc.group/trpc-go/trpc-go/admin"
+	"trpc.group/trpc-go/trpc-go/log"
 
-	"git.code.oa.com/trpc-go/trpc-filter/tvar/meterprovider"
+	"trpc.group/trpc-go/trpc-filter/tvar/meterprovider"
 )
 
 func start() {

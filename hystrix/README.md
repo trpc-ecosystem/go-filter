@@ -1,5 +1,5 @@
 ## tRPC-Go [hystrix] fuse protection plugin
-[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-942764d8bdb64eb1ad280822bfc78e97/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com:/ms/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-942764d8bdb64eb1ad280822bfc78e97/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject)[![Coverage](https://tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-942764d8bdb64eb1ad280822bfc78e97)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-942764d8bdb64eb1ad280822bfc78e97)[![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/git.code.oa.com/trpc-go/trpc-filter/hystrix)
+[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-942764d8bdb64eb1ad280822bfc78e97/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com:/ms/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-942764d8bdb64eb1ad280822bfc78e97/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject)[![Coverage](https://tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-942764d8bdb64eb1ad280822bfc78e97)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-942764d8bdb64eb1ad280822bfc78e97)[![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/trpc.group/trpc-go/trpc-filter/hystrix)
 ### hystrix plugin introduction
 
 The plugin is based on Netflix's open source hystrix component, see https://github.com/afex/hystrix-go
@@ -12,7 +12,7 @@ The plugin is based on Netflix's open source hystrix component, see https://gith
 
    ```go
    import （
-   	_ "git.code.oa.com/trpc-go/trpc-filter/hystrix"
+   	_ "trpc.group/trpc-go/trpc-filter/hystrix"
    ）
    ```
 

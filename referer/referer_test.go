@@ -12,10 +12,10 @@ import (
 	"net/url"
 	"testing"
 
-	"git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/codec"
-	"git.code.oa.com/trpc-go/trpc-go/http"
 	"github.com/stretchr/testify/assert"
+	"trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/codec"
+	"trpc.group/trpc-go/trpc-go/http"
 )
 
 // TestPlugin_Type TestPlugin_Type

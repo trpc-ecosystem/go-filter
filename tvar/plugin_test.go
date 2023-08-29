@@ -10,9 +10,9 @@ import (
 	"errors"
 	"testing"
 
-	"git.code.oa.com/trpc-go/trpc-go"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
+	"trpc.group/trpc-go/trpc-go"
 )
 
 const configInfo = `

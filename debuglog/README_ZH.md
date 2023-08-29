@@ -8,7 +8,7 @@
 
 ```go
 import (
-   _ "git.code.oa.com/trpc-go/trpc-filter/debuglog"
+   _ "trpc.group/trpc-go/trpc-filter/debuglog"
 )
 ```
 
@@ -90,8 +90,8 @@ plugins:
 import (
 	"context"
 	"fmt"
-	"git.code.oa.com/trpc-go/trpc-go/filter"
-	"git.code.oa.com/trpc-go/trpc-filter/debuglog"
+	"trpc.group/trpc-go/trpc-go/filter"
+	"trpc.group/trpc-go/trpc-filter/debuglog"
 )
 
 func main() {

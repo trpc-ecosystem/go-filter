@@ -13,9 +13,9 @@ import (
 	"net/url"
 	"strings"
 
-	"git.code.oa.com/trpc-go/trpc-go/errs"
-	"git.code.oa.com/trpc-go/trpc-go/filter"
-	"git.code.oa.com/trpc-go/trpc-go/http"
+	"trpc.group/trpc-go/trpc-go/errs"
+	"trpc.group/trpc-go/trpc-go/filter"
+	"trpc.group/trpc-go/trpc-go/http"
 )
 
 const (

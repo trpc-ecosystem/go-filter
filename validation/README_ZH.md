@@ -8,7 +8,7 @@
 
 ```golang
 import (
-   _ "git.code.oa.com/trpc-go/trpc-filter/validation"
+   _ "trpc.group/trpc-go/trpc-filter/validation"
 )
 ```
 
@@ -68,7 +68,7 @@ package trpc.test.helloworld;
 
 import "trpc/common/validate.proto";
 
-option go_package="git.code.oa.com/trpcprotocol/test/helloworld";
+option go_package="trpc.group/trpcprotocol/test/helloworld";
 
 /* SearchRequest represents a search query, with pagination options to
  * indicate which results to include in the response.

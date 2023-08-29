@@ -1,8 +1,8 @@
 cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
-git.code.oa.com/inews_go/tools/cgroup v0.0.0-20210128062255-7a753d51d0de h1:m7OpXlnn9XRN5CQAqbt9+5sxUgvYquKqAxJP3ulrjwU=
-git.code.oa.com/inews_go/tools/cgroup v0.0.0-20210128062255-7a753d51d0de/go.mod h1:p8IndIKeNB2SH0vfzcoQZ1nvbdB3vZ8mCjVUSQ+ineo=
-git.code.oa.com/trpc-go/trpc-go v0.9.4 h1:9ce2linRK5uWrgjeJE/0xCG36PFkG6RzhrKXiNtfrYU=
-git.code.oa.com/trpc-go/trpc-go v0.9.4/go.mod h1:huzwta+GtVT8ZflgYx6qU+zfJ71PDAD6FFzqriqse1c=
+trpc.group/inews_go/tools/cgroup v0.0.0-20210128062255-7a753d51d0de h1:m7OpXlnn9XRN5CQAqbt9+5sxUgvYquKqAxJP3ulrjwU=
+trpc.group/inews_go/tools/cgroup v0.0.0-20210128062255-7a753d51d0de/go.mod h1:p8IndIKeNB2SH0vfzcoQZ1nvbdB3vZ8mCjVUSQ+ineo=
+trpc.group/trpc-go/trpc-go v0.9.4 h1:9ce2linRK5uWrgjeJE/0xCG36PFkG6RzhrKXiNtfrYU=
+trpc.group/trpc-go/trpc-go v0.9.4/go.mod h1:huzwta+GtVT8ZflgYx6qU+zfJ71PDAD6FFzqriqse1c=
 git.woa.com/jce/jce v1.2.0 h1:o75OgZYPg2+AWtF3m7YkC6lISOKtMmuj3H2UzD6e8Rg=
 git.woa.com/jce/jce v1.2.0/go.mod h1:tDEP7kGD+54CmvikQ3n5CS3YYwzSkiqKgXdOhFKpvq0=
 git.woa.com/trpc-go/go_reuseport v1.7.0 h1:h9Z8/fFvOSk+ezrLRyJ8Ck4tka74ZRCxgKI+4zYlT44=

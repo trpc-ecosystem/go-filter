@@ -12,11 +12,11 @@ import (
 	"math/rand"
 	"time"
 
-	"git.code.oa.com/trpc-go/trpc-go/codec"
-	"git.code.oa.com/trpc-go/trpc-go/errs"
-	"git.code.oa.com/trpc-go/trpc-go/filter"
+	"trpc.group/trpc-go/trpc-go/codec"
+	"trpc.group/trpc-go/trpc-go/errs"
+	"trpc.group/trpc-go/trpc-go/filter"
 
-	trpc "git.code.oa.com/trpc-go/trpc-go"
+	trpc "trpc.group/trpc-go/trpc-go"
 )
 
 type options struct {

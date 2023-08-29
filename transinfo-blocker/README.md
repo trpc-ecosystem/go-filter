@@ -9,7 +9,7 @@
 
 ```go
 import (
-    _ "git.code.oa.com/trpc-go/trpc-filter/transinfo-blocker"
+    _ "trpc.group/trpc-go/trpc-filter/transinfo-blocker"
 )
 ```
 

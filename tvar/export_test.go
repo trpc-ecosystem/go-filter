@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"git.code.oa.com/trpc-go/trpc-filter/tvar/meterprovider"
 	"github.com/stretchr/testify/assert"
 	"go.opentelemetry.io/otel/sdk/metric/export/aggregation"
 	"go.opentelemetry.io/otel/sdk/metric/number"
+	"trpc.group/trpc-go/trpc-filter/tvar/meterprovider"
 )
 
 func Test_handler(t *testing.T) {

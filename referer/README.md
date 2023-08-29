@@ -1,6 +1,6 @@
 # referer
 
-[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-a437407d143f42f6b408ec8f23874fd5/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com:/ms/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-a437407d143f42f6b408ec8f23874fd5/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject) [![Coverage](https://tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-a437407d143f42f6b408ec8f23874fd5)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-a437407d143f42f6b408ec8f23874fd5) [![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/git.code.oa.com/trpc-go/trpc-filter/referer)
+[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-a437407d143f42f6b408ec8f23874fd5/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com:/ms/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-a437407d143f42f6b408ec8f23874fd5/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject) [![Coverage](https://tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-a437407d143f42f6b408ec8f23874fd5)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-a437407d143f42f6b408ec8f23874fd5) [![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/trpc.group/trpc-go/trpc-filter/referer)
 
 http referer 安全验证
 
@@ -10,7 +10,7 @@ http referer 安全验证
 
 ```golang
 import (
-   _ "git.code.oa.com/trpc-go/trpc-filter/referer"
+   _ "trpc.group/trpc-go/trpc-filter/referer"
 )
 ```
 

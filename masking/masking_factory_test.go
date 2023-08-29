@@ -9,10 +9,10 @@ package masking
 import (
 	"testing"
 
-	"git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/plugin"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
+	"trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/plugin"
 )
 
 const confNoLogfile = `

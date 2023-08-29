@@ -12,9 +12,9 @@ import (
 	"errors"
 	"testing"
 
-	"git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/errs"
 	"github.com/stretchr/testify/assert"
+	"trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/errs"
 )
 
 func TestRPCServerFilter(t *testing.T) {

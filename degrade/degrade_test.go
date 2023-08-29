@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	trpc "git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/plugin"
 	"github.com/stretchr/testify/assert"
 	yaml "gopkg.in/yaml.v3"
+	trpc "trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/plugin"
 )
 
 const configInfo = `

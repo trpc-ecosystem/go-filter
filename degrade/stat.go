@@ -9,8 +9,8 @@ package degrade
 import (
 	"time"
 
-	"git.code.oa.com/inews_go/tools/cgroup"
 	"github.com/shirou/gopsutil/load"
+	"trpc.group/inews_go/tools/cgroup"
 )
 
 var (

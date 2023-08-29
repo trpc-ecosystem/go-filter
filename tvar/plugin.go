@@ -7,7 +7,7 @@
 package tvar
 
 import (
-	"git.code.oa.com/trpc-go/trpc-go/plugin"
+	"trpc.group/trpc-go/trpc-go/plugin"
 )
 
 const (

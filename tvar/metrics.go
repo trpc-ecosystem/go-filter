@@ -10,16 +10,16 @@ import (
 	"fmt"
 	"time"
 
-	"git.code.oa.com/trpc-go/trpc-go"
 	"go.opentelemetry.io/otel/metric"
 	"go.opentelemetry.io/otel/metric/instrument"
 	"go.opentelemetry.io/otel/metric/instrument/asyncint64"
 	"go.opentelemetry.io/otel/metric/instrument/syncint64"
 	"go.opentelemetry.io/otel/metric/unit"
 	"go.opentelemetry.io/otel/sdk/metric/export/aggregation"
+	"trpc.group/trpc-go/trpc-go"
 
-	"git.code.oa.com/trpc-go/trpc-filter/tvar/meterprovider"
-	"git.code.oa.com/trpc-go/trpc-filter/tvar/slidingwindow"
+	"trpc.group/trpc-go/trpc-filter/tvar/meterprovider"
+	"trpc.group/trpc-go/trpc-filter/tvar/slidingwindow"
 )
 
 // rpc version

@@ -1,6 +1,6 @@
 # tRPC-Go [degrade] 熔断保护插件
 
-[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-b4b171fff152465397df973569962702/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com:/ms/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-b4b171fff152465397df973569962702/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject)[![Coverage](https://tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-b4b171fff152465397df973569962702)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-b4b171fff152465397df973569962702)[![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/git.code.oa.com/trpc-go/trpc-filter/degrade)
+[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-b4b171fff152465397df973569962702/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com:/ms/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-b4b171fff152465397df973569962702/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject)[![Coverage](https://tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-b4b171fff152465397df973569962702)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-b4b171fff152465397df973569962702)[![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/trpc.group/trpc-go/trpc-filter/degrade)
 
 ## degrade插件使用介绍
 
@@ -90,7 +90,7 @@ load average: 0.28(1min), 0.26(5min), 0.23(15min)
 
 ```go
 import (
-   _ "git.code.oa.com/trpc-go/trpc-filter/degrade"
+   _ "trpc.group/trpc-go/trpc-filter/degrade"
 )
 ```
 

@@ -49,7 +49,7 @@ https://git.woa.com/trpc/trpc-proposal/blob/master/A6-tvar.md。
 
 ## 使用方式
 
-1. 代码中导入包：`import _ "git.code.oa.com/trpc-go/trpc-filter/tvar"
+1. 代码中导入包：`import _ "trpc.group/trpc-go/trpc-filter/tvar"
 2. trpc_go.yaml中增加初始化配置
 
    ```yaml

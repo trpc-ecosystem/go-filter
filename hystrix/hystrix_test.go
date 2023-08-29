@@ -12,12 +12,12 @@ import (
 	"testing"
 	"time"
 
-	"git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/plugin"
 	"github.com/afex/hystrix-go/hystrix"
 	metriccollector "github.com/afex/hystrix-go/hystrix/metric_collector"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
+	"trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/plugin"
 )
 
 const configInfo = `

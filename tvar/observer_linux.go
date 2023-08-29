@@ -13,9 +13,9 @@ import (
 	"context"
 	"os"
 
-	"git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/log"
 	"github.com/bastjan/netstat"
+	"trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/log"
 )
 
 func asyncUpdateTCPConnection() {

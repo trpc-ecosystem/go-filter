@@ -11,12 +11,12 @@ import (
 	"context"
 	"testing"
 
-	"git.code.oa.com/trpc-go/trpc-filter/filterextensions"
-	"git.code.oa.com/trpc-go/trpc-go"
-	"git.code.oa.com/trpc-go/trpc-go/filter"
-	"git.code.oa.com/trpc-go/trpc-go/plugin"
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v3"
+	"trpc.group/trpc-go/trpc-filter/filterextensions"
+	"trpc.group/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go/filter"
+	"trpc.group/trpc-go/trpc-go/plugin"
 )
 
 func TestServiceMethodFilters_Type(t *testing.T) {
