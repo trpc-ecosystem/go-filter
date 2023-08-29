@@ -14,9 +14,9 @@ import (
 
 	"github.com/mitchellh/mapstructure"
 
-	"git.code.oa.com/trpc-go/trpc-go/errs"
-	"git.code.oa.com/trpc-go/trpc-go/filter"
-	trpcHttp "git.code.oa.com/trpc-go/trpc-go/http"
+	"trpc.group/trpc-go/trpc-go/errs"
+	"trpc.group/trpc-go/trpc-go/filter"
+	trpcHttp "trpc.group/trpc-go/trpc-go/http"
 )
 
 // ContextKey 定义类型

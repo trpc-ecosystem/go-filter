@@ -13,7 +13,7 @@ import (
 	"net/url"
 	"testing"
 
-	thttp "git.code.oa.com/trpc-go/trpc-go/http"
+	thttp "trpc.group/trpc-go/trpc-go/http"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -9,7 +9,7 @@ package jwt
 import (
 	"testing"
 
-	"git.code.oa.com/trpc-go/trpc-go"
+	"trpc.group/trpc-go/trpc-go"
 
 	"github.com/stretchr/testify/assert"
 	yaml "gopkg.in/yaml.v3"
