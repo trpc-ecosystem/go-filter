@@ -1,3 +1,5 @@
+English | [中文](./README_zh_CN.md)
+
 ## Supported Protocols
 <span style="color:red">**DO NOT enable retry/hedging for non-idempotent requests**</span>.  
 <span style="color:red">Not all protocols can use retry/hedging</span>.  
@@ -28,7 +30,7 @@ gives a very detailed introduction of gRPC design. gRPC-java has implemented it.
 * [bRPC](https://github.com/apache/incubator-brpc): In bRPC, a hedging request is called a backup request. This [doc](https://github.com/apache/incubator-brpc/blob/master/docs/cn/backup_request.md) gives a brief introduction, and its c++ implementation is relative simple.
 * [finagle](https://github.com/twitter/finagle): finagle is a java RPC open source framework, it also implements [backup request](https://twitter.github.io/finagle/guide/MethodBuilder.html#backup-requests).
 * [pegasus](https://github.com/apache/incubator-pegasus): Pegasus is a kv database that supports simultaneous reading data from multiple copies. [Backup request] is used to improve performance.
-* [envoy](https://www.envoyproxy.io/docs/envoy/latest/): Envoy, as a proxy service, is widely used in cloud native. It also supports [request hedging](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http_routing#request-hedging)。
+* [envoy](https://www.envoyproxy.io/docs/envoy/latest/): Envoy, as a proxy service, is widely used in cloud native. It also supports [request hedging](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http_routing#request-hedging).
 
 This article will introduce retry/hedging of the tRPC framework. In next section, we briefly introduced the rationale for retry hedging. The next two sectinos describe more implementation details. We introduced the basic package of retry/hedging, and the slime is a manager based on these basic capabilities, which provides you with yaml-based configuration. Finally, we list some problems you may encounter.
 
@@ -91,8 +93,8 @@ Don't get discouraged if you're using a load balancer that doesn't support skipp
 ## Introduce to Basic Retry/Hedging Packages
 This chapter only briefly introduces the basic package of retry/hedging as the basis of next section. Although we provide some usage examples, please <span style="color:red">try to avoid using them directly at the application layer</span>. You should use slime to enable retry/hedging.
 
-### [retry](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/retry)
-[retry](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/retry) provides the basic retry strategy.
+### [retry](./retry)
+[retry](./retry) provides the basic retry strategy.
 
 `New` creates a new retry strategy, you must specify the maximum number of retries and retryable error codes. You can also customize the retryable error through `WithRetryableErr`, which has an OR relationship with the retryable error codes.
 
@@ -120,8 +122,8 @@ r, _ := retry.New(4, []int{errs.RetClientNetErr}, retry.WithLinearBackoff(time.M
 rsp, _ := clientProxy.Hello(ctx, req, client.WithFilter(r.Invoke))
 ```
 
-### [Hedging](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/hedging)
-[Hedging](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/hedging) provides the basic hedging strategy.
+### [Hedging](./hedging)
+[Hedging](./hedging) provides the basic hedging strategy.
 
 `New` creates a new hedging strategy. You must specify the maximum number of retries and non-fatal error codes. You can also customize non-fatal errors through `WithNonFatalError`, which has an OR relationship with non-fatal error codes.
 
@@ -138,8 +140,8 @@ h, _ := hedging.New(2, []int{errs.RetClientNetErr}, hedging.WithStaticHedgingDel
 rsp, _ := clientProxy.Hello(ctx, req, client.WithFilter(h.Invoke))
 ```
 
-### [Throttle](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/throttle)
-[Throttle](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/throttle) is a used to avoid retry/hedging write amplification.
+### [Throttle](./throttle)
+[Throttle](./throttle) is a used to avoid retry/hedging write amplification.
 
 The `throttler` interface provides three methods:
 ```Go
@@ -387,7 +389,7 @@ There are a few points you need to pay attention to:
 
 ### Metrics
 Similar to conditional logs, retry/hedge monitoring is also based on
-[`view.Stat`](https://github.com/trpc-ecosystem/go-filter/blob/main/slime/view/stat.go).
+[`view.Stat`](./view/stat.go).
 
 slime provides four metrics: application layer request number, actual request number, application layer time
 consumption, and actual time consumption.  

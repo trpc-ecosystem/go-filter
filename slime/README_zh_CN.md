@@ -1,3 +1,5 @@
+[English](./README.md) | 中文
+
 ## 支持的协议
 <span style="color:red">**请不要对非幂等请求开启重试/对冲功能**</span>。
 <span style="color:red">并非所有协议都能使用重试/对冲</span>。
@@ -8,7 +10,7 @@
 |trpc|✓|✓| 原生的 trpc 协议。 |
 |trpc SendOnly|✗|✗| 不支持，重试/对冲根据返回的错误码进行判断，而 SendOnly 请求不会回包。 |
 |trpc 流式|✗|✗| 暂不支持。 |
-|[http](https://github.com/trpc-group/trpc-go/tree/main/http)|✓|✓| slime v0.2.2 后支持。 |
+|[http](https://github.com/trpc-group/trpc-go/tree/main/http)|✓|✓||
 |[Kafaka](https://github.com/trpc-ecosystem/go-database/tree/main/kafka)|✓|✗| 不支持对冲功能。 |
 |[MySQL](https://github.com/trpc-ecosystem/go-database/tree/main/mysql)|★|★| <span style="color:red">除 [Query](https://github.com/trpc-ecosystem/go-database/blob/6f75e87fecfc5411e54d93fd1aad5e7afa9a0fcf/mysql/client.go#L40) 和 [Transaction](https://github.com/trpc-ecosystem/go-database/blob/6f75e87fecfc5411e54d93fd1aad5e7afa9a0fcf/mysql/client.go#L42) 两个方法外，其他都支持</span>。这两个方法以函数闭包作为参数，slime 无法保证数据的并发安全性，可以使用 `slime.WithDisabled` 关闭重试/对冲。 |
 
@@ -87,8 +89,8 @@ server pushback 用于服务端显式地控制客户端的重试/对冲策略。
 ## retry hedging 基础包介绍
 本章只是简要介绍重试/对冲的基础包，以作为后一章的基础。尽管我们提供了一些使用范例，但还是请<span style="color:red">尽量避免直接在应用层使用它们</span>。你应该通过 Slime 来使用重试/对冲功能。
 
-### [retry](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/retry)
-[retry](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/retry) 包提供了基础的重试策略。
+### [retry](./retry)
+[retry](./retry) 包提供了基础的重试策略。
 
 `New` 创建一个新的重试策略，你必须指定最大重式次数和可重试错误码。你也可以通过 `WithRetryableErr` 自定义可重试错误，它和可重试错误码是或关系。
 
@@ -114,8 +116,8 @@ r, _ := retry.New(4, []int{errs.RetClientNetErr}, retry.WithLinearBackoff(time.M
 rsp, _ := clientProxy.Hello(ctx, req, client.WithFilter(r.Invoke))
 ```
 
-### [hedging](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/hedging)
-[hedging](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/hedging) 包提供了基础的对冲策略。
+### [hedging](./hedging)
+[hedging](./hedging) 包提供了基础的对冲策略。
 
 `New` 创建一个新的对冲策略。你必须指定最大重试次数和非致命错误码。你也可以通过 `WithNonFatalError` 自定义非致命错误，它和非致命错误码是或关系。
 
@@ -131,8 +133,8 @@ h, _ := hedging.New(2, []int{errs.RetClientNetErr}, hedging.WithStaticHedgingDel
 rsp, _ := clientProxy.Hello(ctx, req, client.WithFilter(h.Invoke))
 ```
 
-### [throttle](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/throttle)
-[throttle](https://github.com/trpc-ecosystem/go-filter/tree/main/slime/throttle) 用来限制重试/对冲时的写放大。
+### [throttle](./throttle)
+[throttle](./throttle) 用来限制重试/对冲时的写放大。
 
 `throttler` interface 提供了三个方法：
 ```Go
@@ -367,7 +369,7 @@ func (l *ConsoleLog) Println(s string) {
 * 最后一条 slime 日志是对所有尝试的汇总。
 
 ### 监控
-与条件日志类似，重试/对冲的监控也是基于 [`view.Stat`](https://github.com/trpc-ecosystem/go-filter/blob/main/slime/view/stat.go) 的。
+与条件日志类似，重试/对冲的监控也是基于 [`view.Stat`](./view/stat.go) 的。
 
 slime 提供了四个监控项：应用层请求数、实际请求数、应用层耗时、实际耗时。
 
