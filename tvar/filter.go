@@ -34,10 +34,6 @@ func RPCServerFilter(
 	serviceReqActiveNum.Add(ctx, 1, attr)
 	serviceQWin.Record()
 
-	// TODO req包尺寸依赖：https://git.woa.com/trpc-go/trpc-go/issues/716
-	//      rsp包尺寸filter里不方便统计
-	// serviceReqSize.Record()
-
 	begin := time.Now()
 	defer func() {
 		serviceReqActiveNum.Add(ctx, -1, attr)

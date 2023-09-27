@@ -59,11 +59,6 @@ plugins:
 
 ## Writing Proto Protocol Files
 
-<<<<<<< HEAD
-=======
-For more detailed instructions, please refer to: https://git.woa.com/devsec/protoc-gen-secv
-
->>>>>>> 6cf84d8 (Translate readme for debuglog, recovery and validation. (merge request !334))
 ```protobuf
 syntax = "proto3";
 

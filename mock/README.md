@@ -1,6 +1,5 @@
 # mock
 
-[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-39d43cbb08d847a799ef26493deea97f/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com:/ms/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-39d43cbb08d847a799ef26493deea97f/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject)[![Coverage](https://tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-39d43cbb08d847a799ef26493deea97f)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-39d43cbb08d847a799ef26493deea97f)[![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/trpc.group/trpc-go/trpc-filter/mock)
 It implement back-end dependency interface mock calls via interceptors.
 
 ## Instructions for use

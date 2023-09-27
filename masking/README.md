@@ -37,8 +37,6 @@ server:
 
 ## 编写proto协议文件
 
-更加详细指引可参考：https://git.woa.com/devsec/protoc-gen-secv
-
 ```
 syntax = "proto3";
 

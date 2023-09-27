@@ -1,7 +1,3 @@
-[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-7c6d21257da948469e47d9ed3b4845ff/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-7c6d21257da948469e47d9ed3b4845ff/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject)
-[![Coverage](https://tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-7c6d21257da948469e47d9ed3b4845ff)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-7c6d21257da948469e47d9ed3b4845ff)
-[![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/trpc.group/trpc-go/trpc-filter/filter_extensions)
-
 ## tRPC-Go 拦截器扩展
 
 tRPC-Go 支持在 `trpc_go.yaml` 中配置拦截器，但是拦截器的精度只到 service 层，无法作更细粒度的配置，如为 method 配置拦截器。

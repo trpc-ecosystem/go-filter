@@ -2,8 +2,7 @@
 
 ## 插件简介
 
-实现serverside、clientside RPC等监控项的统计上报，具体要支持的监控项，详见：
-https://git.woa.com/trpc/trpc-proposal/blob/master/A6-tvar.md。
+实现serverside、clientside RPC等监控项的统计上报
 
 注册admin接口：/cmds/stats/rpc 接口可查询监控项，及支持情况
 
@@ -40,13 +39,6 @@ https://git.woa.com/trpc/trpc-proposal/blob/master/A6-tvar.md。
 | rpc_client_xxx_latency_999          | 必须    | client p999延时           | ✔ |
 | rpc_client_xxx_latency_avg/max/min | 必须    | client延时的avg/max/min    | ❌ |
 
-后续PR中可以继续完善的：
-
-- version 提案中未说明指的是什么版本，以及从哪里获取
-- req/rsp包尺寸 外部依赖：https://git.woa.com/trpc-go/trpc-go/issues/716
-- service协议错误 在filter中也无法做统计，可用框架metrics打点代替
-- latency的avg\max\min 在已经有百分位数支持的前提下，这些价值不大，otel metrics/histogram sdk不支持记录最小、最大
-
 ## 使用方式
 
 1. 代码中导入包：`import _ "trpc.group/trpc-go/trpc-filter/tvar"
@@ -63,5 +55,3 @@ https://git.woa.com/trpc/trpc-proposal/blob/master/A6-tvar.md。
    ```
 
 3. 查询：`curl http://ip:adminport/cmds/stats/rpc`
-
-详见iwiki使用说明：https://iwiki.woa.com/pages/viewpage.action?pageId=1226665829

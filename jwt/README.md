@@ -1,7 +1,5 @@
 # tRPC-Go [jwt] 用户身份验证拦截器
 
-[![BK Pipelines Status](https://api.bkdevops.qq.com/process/api/external/pipelines/projects/pcgtrpcproject/p-5351dee5801b4df98c03692007da4c5f/badge?X-DEVOPS-PROJECT-ID=pcgtrpcproject)](http://devops.oa.com/process/api-html/user/builds/projects/pcgtrpcproject/pipelines/p-5351dee5801b4df98c03692007da4c5f/latestFinished?X-DEVOPS-PROJECT-ID=pcgtrpcproject) [![Coverage](https://badge.tcoverage.woa.com/api/getCoverage/getTotalImg/?pipeline_id=p-5351dee5801b4df98c03692007da4c5f)](http://macaron.oa.com/api/coverage/getTotalLink/?pipeline_id=p-5351dee5801b4df98c03692007da4c5f) [![GoDoc](https://img.shields.io/badge/API%20Docs-GoDoc-green)](http://godoc.oa.com/trpc.group/trpc-go/trpc-filter/jwt)
-
 ## jwt 插件使用说明
 
 ### I. 必要条件

@@ -59,8 +59,6 @@ plugins:
 
 ## 编写proto协议文件
 
-更加详细的指引请参考：<https://git.woa.com/devsec/protoc-gen-secv>
-
 ```protobuf
 syntax = "proto3";
 
