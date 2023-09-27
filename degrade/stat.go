@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/shirou/gopsutil/load"
-	"trpc.group/inews_go/tools/cgroup"
+	"trpc.group/trpc-go/trpc-filter/degrade/internal/cgroup"
 )
 
 var (
@@ -25,7 +25,7 @@ var (
 func UpdateSysInfoPerTime() {
 	for range time.Tick(time.Duration(UpdateSysPeriod) * time.Second) {
 		// get cpuinfo perorid 90s
-		cpuUsage, cerr := cgroup.GetDockerCpuUsage(time.Second * time.Duration(WaitCPUTime))
+		cpuUsage, cerr := cgroup.GetDockerCPUUsage(time.Second * time.Duration(WaitCPUTime))
 		if cerr == nil {
 			// use more 1 to calculute cpu idle to integer
 			cpuIdle = 100 - int(cpuUsage*100)
@@ -36,10 +36,6 @@ func UpdateSysInfoPerTime() {
 	}
 }
 
-// GetCpuIdle 获取 cpu 使用率
-// Deprecated: Use GetCPUIdle instead.
-var GetCpuIdle = GetCPUIdle //nolint:revive
-
 // GetCPUIdle 获取 cpu 使用率
 func GetCPUIdle() int {
 	return cpuIdle
@@ -47,7 +43,7 @@ func GetCPUIdle() int {
 
 var loadavgProvider = load.Avg
 
-// GetLoadAvg 获取load负载，包含load1，load5，load15
+// GetLoadAvg 获取 load 负载，包含 load1，load5，load15
 func GetLoadAvg() (*load.AvgStat, error) {
 	loadavg, err := loadavgProvider()
 	if err != nil {

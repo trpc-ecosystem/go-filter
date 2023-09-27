@@ -47,8 +47,8 @@ func TestGetMemoryStat(t *testing.T) {
 	assert.Equal(t, 0.0, GetMemoryStat())
 }
 
-// TestGetCpuIdle cpu idle test
-func TestGetCpuIdle(t *testing.T) {
+// TestGetCPUIdle cpu idle test
+func TestGetCPUIdle(t *testing.T) {
 	idle := GetCPUIdle()
 	assert.Greater(t, idle, 0)
 }

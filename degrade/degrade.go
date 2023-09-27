@@ -38,7 +38,7 @@ var (
 
 // Config 熔断配置结构体声明
 type Config struct {
-	// Load5 5分钟 触发熔断的阈值，恢复时使用实时load1 <= 本值来判断，更敏感
+	// Load5 5 分钟 触发熔断的阈值，恢复时使用实时 load1 <= 本值来判断，更敏感
 	Load5 float64 `yaml:"load5"`
 	// CPUIdle cpuidle 触发熔断的阈值
 	CPUIdle int `yaml:"cpu_idle"`
@@ -54,16 +54,16 @@ type Config struct {
 	Whitelist string `yaml:"whitelist"`
 	// IsActive 标志熔断是否生效
 	IsActive bool `yaml:"-"`
-	// MaxConcurrentCnt 最大并发请求数,<=0时不开启,控制最大并发请求数,和上述熔断互为补充,能防止突发流量把服务打死,比如1ms内突然进入100W请求
+	// MaxConcurrentCnt 最大并发请求数，<=0 时不开启，控制最大并发请求数，和上述熔断互为补充，能防止突发流量把服务打死，比如 1ms 内突然进入 100W 请求
 	MaxConcurrentCnt int `yaml:"max_concurrent_cnt"`
-	// MaxTimeOutMs 超过最大并发请求数时,最多等待MaxTimeOutMs才决定是熔断还是继续处理
+	// MaxTimeOutMs 超过最大并发请求数时，最多等待 MaxTimeOutMs 才决定是熔断还是继续处理
 	MaxTimeOutMs int `yaml:"max_timeout_ms"`
 }
 
 // Degrade 熔断插件默认初始化
 type Degrade struct{}
 
-// Filter 声明熔断组件的filter来充当拦截器
+// Filter 声明熔断组件的 filter 来充当拦截器
 func Filter(
 	ctx context.Context, req interface{}, handler filter.ServerHandleFunc,
 ) (interface{}, error) {
@@ -81,7 +81,7 @@ func Filter(
 			defer func() {
 				<-sema
 			}()
-		// 达到最大并发请求数, 直接丢弃请求
+		// 达到最大并发请求数，直接丢弃请求
 		default:
 			return nil, errs.New(systemDegradeErrNo, errDegardeReturn)
 		}
