@@ -1,8 +1,15 @@
+//
+//
 // Tencent is pleased to support the open source community by making tRPC available.
-// Copyright (C) 2023 THL A29 Limited, a Tencent company. All rights reserved.
+//
+// Copyright (C) 2023 THL A29 Limited, a Tencent company.
+// All rights reserved.
+//
 // If you have downloaded a copy of the tRPC source code from Tencent,
 // please note that tRPC source code is licensed under the Apache 2.0 License,
 // A copy of the Apache 2.0 License is included in this file.
+//
+//
 
 // Package slidingwindow provides an implementation of Sliding Window Algorithm.
 //
@@ -13,7 +20,9 @@
 // internal sliding window will be as below:
 //
 // ```
-//             Sliding Window
+//
+//	Sliding Window
+//
 // |-------------------------------------|
 // |  Previous Window | Current Window   |      window size: 60s
 // |------------------|------------------|
@@ -31,8 +40,10 @@
 //
 // ```
 // count = 86 * ((60-15)/60) + 12
-//       = 86 * 0.75 + 12
-//       = 76.5 events
+//
+//	= 86 * 0.75 + 12
+//	= 76.5 events
+//
 // ```
 //
 // In the example, count of requests is recorded in the slidingwindow. Actually we can see the request as an event,

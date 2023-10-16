@@ -1,8 +1,15 @@
+//
+//
 // Tencent is pleased to support the open source community by making tRPC available.
-// Copyright (C) 2023 THL A29 Limited, a Tencent company. All rights reserved.
+//
+// Copyright (C) 2023 THL A29 Limited, a Tencent company.
+// All rights reserved.
+//
 // If you have downloaded a copy of the tRPC source code from Tencent,
 // please note that tRPC source code is licensed under the Apache 2.0 License,
 // A copy of the Apache 2.0 License is included in this file.
+//
+//
 
 // Package filterextensions 是对 tRPC-Go yaml 配置的一个拓展。它允许用户定义 method 粒度的 filter。
 package filterextensions

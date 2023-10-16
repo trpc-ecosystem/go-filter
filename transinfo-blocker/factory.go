@@ -1,8 +1,15 @@
+//
+//
 // Tencent is pleased to support the open source community by making tRPC available.
-// Copyright (C) 2023 THL A29 Limited, a Tencent company. All rights reserved.
+//
+// Copyright (C) 2023 THL A29 Limited, a Tencent company.
+// All rights reserved.
+//
 // If you have downloaded a copy of the tRPC source code from Tencent,
 // please note that tRPC source code is licensed under the Apache 2.0 License,
 // A copy of the Apache 2.0 License is included in this file.
+//
+//
 
 // Package blocker 用于屏蔽调用下游的字段，避免登录态及其他敏感信息泄露问题
 // @Title  factory.go
