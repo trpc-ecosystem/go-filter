@@ -1,0 +1,25 @@
+name: tvar Pull Request Check
+on:
+  pull_request:
+    paths:
+      - 'tvar/**'
+  push:
+    paths:
+      - 'tvar/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-go@v4
+      with:
+        go-version: 1.19
+    - name: Build
+      run: cd tvar && go build -v ./...
+    - name: Test
+      run: cd tvar && go test -v -gcflags=all=-l ./...
+   
