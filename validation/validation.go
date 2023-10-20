@@ -31,8 +31,8 @@ func init() {
 var defaultOptions = options{
 	LogFile:               nil,
 	EnableErrorLog:        false,
-	ServerValidateErrCode: errs.RetServerValidateFail,
-	ClientValidateErrCode: errs.RetClientValidateFail,
+	ServerValidateErrCode: int(errs.RetServerValidateFail),
+	ClientValidateErrCode: int(errs.RetClientValidateFail),
 }
 
 // options is the options for parameter validation.
