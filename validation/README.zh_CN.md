@@ -8,11 +8,11 @@
 
 ```golang
 import (
-   _ "trpc.group/trpc-go/trpc-filter/validation"
+    _ "trpc.group/trpc-go/trpc-filter/validation"
 )
 ```
 
-配置trpc-go框架配置文件。在server的filter配置中，按如下方法开启validation拦截器，自动校验req请求参数。
+配置 trpc-go 框架配置文件。在 server 的 filter 配置中，按如下方法开启 validation 拦截器，自动校验 req 请求参数。
 
 ```yaml
 server:
@@ -22,7 +22,7 @@ server:
   - validation
 ```
 
-配置trpc-go框架配置文件。在client的filter配置中，按如下方法开启validation拦截器，自动校验rsp请求参数。
+配置 trpc-go 框架配置文件。在 client 的 filter 配置中，按如下方法开启 validation 拦截器，自动校验 rsp 请求参数。
 
 ```yaml
 client:
@@ -57,14 +57,14 @@ plugins:
       client_validate_err_code: 100102
 ```
 
-## 编写proto协议文件
+## 编写 proto 协议文件
 
 ```protobuf
 syntax = "proto3";
 
 package trpc.test.helloworld;
 
-import "trpc/common/validate.proto";
+import "validate/validate.proto";
 
 option go_package="trpc.group/trpcprotocol/test/helloworld";
 

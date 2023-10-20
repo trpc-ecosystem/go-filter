@@ -8,7 +8,7 @@ Import this plugin in your code.
 
 ```golang
 import (
-   _ "trpc.group/trpc-go/trpc-filter/validation"
+    _ "trpc.group/trpc-go/trpc-filter/validation"
 )
 ```
 
@@ -64,7 +64,7 @@ syntax = "proto3";
 
 package trpc.test.helloworld;
 
-import "trpc/common/validate.proto";
+import "validate/validate.proto";
 
 option go_package="trpc.group/trpcprotocol/test/helloworld";
 
