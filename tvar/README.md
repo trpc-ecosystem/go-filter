@@ -1,5 +1,10 @@
 # trpc-go tvar统计插件
 
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/tvar.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/tvar)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/tvar)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/tvar)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/tvar.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/tvar.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=tvar&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/tvar)
+
 ## 插件简介
 
 实现serverside、clientside RPC等监控项的统计上报

@@ -1,5 +1,10 @@
 # mock
 
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/mock.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/mock)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/mock)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/mock)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/mock.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/mock.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=mock&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/mock)
+
 It implement back-end dependency interface mock calls via interceptors.
 
 ## Instructions for use

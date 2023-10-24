@@ -1,5 +1,10 @@
 ## tRPC-Go 拦截器扩展
 
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/filterextensions.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/filterextensions)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/filterextensions)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/filterextensions)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/filterextensions.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/filterextensions.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=filterextensions&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/filterextensions)
+
 tRPC-Go 支持在 `trpc_go.yaml` 中配置拦截器，但是拦截器的精度只到 service 层，无法作更细粒度的配置，如为 method 配置拦截器。
 
 这个插件扩展了 `trpc_go.yaml` 的解析方式，以「插件」+「拦截器」的方式实现了 method 粒度的拦截器。

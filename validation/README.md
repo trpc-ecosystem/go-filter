@@ -1,5 +1,10 @@
 # Validation
 
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/validation.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/validation)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/validation)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/validation)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/validation.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/validation.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=validation&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/validation)
+
 Parameter automatic validation plugin. Supports custom error codes.
 
 ## Usage
