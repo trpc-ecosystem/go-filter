@@ -21,5 +21,12 @@ jobs:
     - name: Build
       run: cd filterextensions && go build -v ./...
     - name: Test
-      run: cd filterextensions && go test -v -gcflags=all=-l ./...
+      run: cd filterextensions && go test -v -coverprofile=coverage.out ./...
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./filterextensions/coverage.out
+        flags: filterextensions
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
    

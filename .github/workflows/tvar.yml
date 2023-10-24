@@ -21,5 +21,11 @@ jobs:
     - name: Build
       run: cd tvar && go build -v ./...
     - name: Test
-      run: cd tvar && go test -v -gcflags=all=-l ./...
-   
+      run: cd tvar && go test -v -coverprofile=coverage.out ./...
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./tvar/coverage.out
+        flags: tvar
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
