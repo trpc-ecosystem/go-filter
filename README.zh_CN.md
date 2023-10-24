@@ -2,6 +2,8 @@
 
 # go-filter
 
+[![LICENSE](https://img.shields.io/badge/license-Apache--2.0-green.svg)](https://github.com/trpc-ecosystem/go-filter/blob/main/LICENSE)
+
 本仓库提供了一些常用的 trpc-go 拦截器，如：
 
 * debuglog: 自动打印客户端/服务端接口的请求和响应

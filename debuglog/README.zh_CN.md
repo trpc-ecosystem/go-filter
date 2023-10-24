@@ -1,5 +1,10 @@
 # debuglog
 
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/debuglog.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/debuglog)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/debuglog)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/debuglog)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/debuglog.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/debuglog.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=debuglog&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/debuglog)
+
 启用此插件后，会对所有接口的请求进行日志打印。
 
 ## 使用说明
