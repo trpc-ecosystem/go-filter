@@ -1,4 +1,10 @@
 ## tRPC-Go [hystrix] fuse protection plugin
+
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/hystrix.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/hystrix)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/hystrix)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/hystrix)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/hystrix.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/hystrix.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=hystrix&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/hystrix)
+
 ### hystrix plugin introduction
 
 The plugin is based on Netflix's open source hystrix component, see https://github.com/afex/hystrix-go

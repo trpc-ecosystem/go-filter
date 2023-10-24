@@ -1,6 +1,12 @@
 [English](./README.md) | 中文
 
 ## 支持的协议
+
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/slime.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/slime)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/slime)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/slime)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/slime.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/slime.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=slime&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/slime)
+
 <span style="color:red">**请不要对非幂等请求开启重试/对冲功能**</span>。
 <span style="color:red">并非所有协议都能使用重试/对冲</span>。
 对于非 trpc 协议，可能并不适用 Slime 一章的 yaml 配置，这时，你可以直接使用基础包。

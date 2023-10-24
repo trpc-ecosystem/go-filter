@@ -1,6 +1,13 @@
-English | [中文](./README_zh_CN.md)
+English | [中文](README.zh_CN.md)
 
 ## Supported Protocols
+
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/slime.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/slime)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/slime)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/slime)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/slime.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/slime.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=slime&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/slime)
+
+
 <span style="color:red">**DO NOT enable retry/hedging for non-idempotent requests**</span>.  
 <span style="color:red">Not all protocols can use retry/hedging</span>.  
 Yaml config in Chapter Slime may not be suitable for non tRPC protocols. In this case, you could use the

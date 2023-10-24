@@ -21,5 +21,12 @@ jobs:
     - name: Build
       run: cd degrade && go build -v ./...
     - name: Test
-      run: cd degrade && go test -v -gcflags=all=-l ./...
+      run: cd degrade && go test -v -coverprofile=coverage.out ./...
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./degrade/coverage.out
+        flags: degrade
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
    

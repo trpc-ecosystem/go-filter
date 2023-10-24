@@ -1,5 +1,10 @@
 # referer
 
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/referer.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/referer)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/referer)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/referer)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/referer.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/referer.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=referer&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/referer)
+
 http referer 安全验证
 
 ## 使用说明

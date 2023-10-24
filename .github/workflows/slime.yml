@@ -21,5 +21,12 @@ jobs:
     - name: Build
       run: cd slime && go build -v ./...
     - name: Test
-      run: cd slime && go test -v -gcflags=all=-l ./...
+      run: cd slime && go test -v -coverprofile=coverage.out ./...
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./slime/coverage.out
+        flags: slime
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
    

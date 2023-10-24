@@ -21,5 +21,13 @@ jobs:
     - name: Build
       run: cd recovery && go build -v ./...
     - name: Test
-      run: cd recovery && go test -v -gcflags=all=-l ./...
+      run: cd recovery && go test -v -coverprofile=coverage.out ./...
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./recovery/coverage.out
+        flags: recovery
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+   
    

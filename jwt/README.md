@@ -1,5 +1,10 @@
 # tRPC-Go [jwt] 用户身份验证拦截器
 
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/jwt.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/jwt)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/jwt)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/jwt)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/jwt.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/jwt.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=jwt&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/jwt)
+
 ## jwt 插件使用说明
 
 ### I. 必要条件

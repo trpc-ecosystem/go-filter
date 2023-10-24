@@ -21,5 +21,12 @@ jobs:
     - name: Build
       run: cd debuglog && go build -v ./...
     - name: Test
-      run: cd debuglog && go test -v -gcflags=all=-l ./...
+      run: cd debuglog && go test -v -coverprofile=coverage.out ./...
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./debuglog/coverage.out
+        flags: debuglog
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
    

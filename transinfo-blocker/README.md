@@ -1,5 +1,11 @@
 # transinfo blocker
 
+[![Go Reference](https://pkg.go.dev/badge/trpc.group/trpc-go/trpc-filter/transinfo-blocker.svg)](https://pkg.go.dev/trpc.group/trpc-go/trpc-filter/transinfo-blocker)
+[![Go Report Card](https://goreportcard.com/badge/trpc.group/trpc-go/trpc-filter/transinfo-blocker)](https://goreportcard.com/report/trpc.group/trpc-go/trpc-filter/transinfo-blocker)
+[![Tests](https://github.com/trpc-ecosystem/go-filter/actions/workflows/transinfo-blocker.yml/badge.svg)](https://github.com/trpc-ecosystem/go-filter/actions/workflows/transinfo-blocker.yml)
+[![Coverage](https://codecov.io/gh/trpc-ecosystem/go-filter/branch/main/graph/badge.svg?flag=transinfo-blocker&precision=2)](https://app.codecov.io/gh/trpc-ecosystem/go-filter/tree/main/transinfo-blocker)
+
+
 - trpc 框架下透传字段安全插件, 用于屏蔽调用下游的字段，避免登录态及其他敏感信息泄露问题。
 
 ## 使用说明

@@ -21,5 +21,12 @@ jobs:
     - name: Build
       run: cd transinfo-blocker && go build -v ./...
     - name: Test
-      run: cd transinfo-blocker && go test -v -gcflags=all=-l ./...
+      run: cd transinfo-blocker && go test -v -coverprofile=coverage.out ./...
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        files: ./transinfo-blocker/coverage.out
+        flags: transinfo-blocker
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
    

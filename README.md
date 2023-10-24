@@ -2,6 +2,8 @@ English | [中文](README.zh_CN.md)
 
 # go-filter
 
+[![LICENSE](https://img.shields.io/badge/license-Apache--2.0-green.svg)](https://github.com/trpc-ecosystem/go-filter/blob/main/LICENSE)
+
 This repository provides several commonly used trpc-go filters, including:
 
 * debuglog: Automatically logs the requests and responses of client/server interfaces.
