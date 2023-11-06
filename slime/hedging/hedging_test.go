@@ -24,6 +24,7 @@ import (
 	"time"
 
 	prom "trpc.group/trpc-go/trpc-filter/slime/view/metrics/prometheus"
+	"trpc.group/trpc-go/trpc-go"
 	"trpc.group/trpc-go/trpc-go/codec"
 	"trpc.group/trpc-go/trpc-go/errs"
 	"trpc.group/trpc-go/trpc-go/naming/bannednodes"

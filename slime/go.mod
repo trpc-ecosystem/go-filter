@@ -7,6 +7,7 @@ require (
 	github.com/prometheus/client_golang v1.12.2
 	github.com/stretchr/testify v1.8.0
 	go.uber.org/atomic v1.9.0
+	gopkg.in/yaml.v2 v2.4.0
 	trpc.group/trpc-go/trpc-go v1.0.1
 	trpc.group/trpc-go/trpc-utils v0.0.0-20230828093641-986b15ee523f
 )

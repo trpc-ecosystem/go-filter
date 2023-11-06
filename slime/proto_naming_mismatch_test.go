@@ -20,6 +20,7 @@ import (
 	"os"
 	"testing"
 
+	"trpc.group/trpc-go/trpc-go"
 	"trpc.group/trpc-go/trpc-go/filter"
 	helloworld "trpc.group/trpc-go/trpc-go/testdata/trpc/helloworld"
 
