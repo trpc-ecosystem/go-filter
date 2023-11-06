@@ -105,9 +105,9 @@ func TestClientFilter(t *testing.T) {
 		ctx, cancel := context.WithTimeout(context.Background(), 2*time.Millisecond)
 		defer cancel()
 
-		fc := filter.Chain{ClientFilter(WithMock(tt.input))}
+		fc := filter.ClientChain{ClientFilter(WithMock(tt.input))}
 
-		err := fc.Handle(ctx, &req, &rsp, noopHandler)
+		err := fc.Filter(ctx, &req, &rsp, noopHandler)
 		tt.assertion(t, err, err)
 	}
 }

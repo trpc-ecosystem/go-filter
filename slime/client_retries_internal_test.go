@@ -23,11 +23,13 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
+	"gopkg.in/yaml.v2"
 	"trpc.group/trpc-go/trpc-filter/slime/hedging"
 	"trpc.group/trpc-go/trpc-filter/slime/retry"
 	"trpc.group/trpc-go/trpc-filter/slime/throttle"
 	"trpc.group/trpc-go/trpc-filter/slime/view"
 	"trpc.group/trpc-go/trpc-filter/slime/view/metrics"
+	"trpc.group/trpc-go/trpc-go"
 )
 
 const cfgFile = "client_retries_test.yaml"
